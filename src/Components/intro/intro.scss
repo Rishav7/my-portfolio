@@ -6,17 +6,22 @@
         background-color: white;
         overflow: hidden;
         .imageContainer {
+            left: 0;
             width: 700px;
             height: 700px;
-            background-color: #15023a;
+            background-color: #ffffff;
             border-radius: 50%;
             display: flex;
             align-items: flex-end;
             justify-content: center;
             float: right;
             img {
-                height: 90%;
+                height: 95%;
+                border-radius: 30px;
             }
+        }
+        .imageContainer:hover {
+            background-color: #e64444;
         }
     }
     .right {
