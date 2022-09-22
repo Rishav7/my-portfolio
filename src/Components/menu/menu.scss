@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     &.active {
         right: 0;
     }
@@ -23,8 +23,14 @@
         font-weight: 300;
         color: white;
         width: 60%;
+        @include mobile {
+            font-size: 20px;
+        }
         li {
             margin-bottom: 25px;
+            @include mobile {
+                margin-bottom: 15px;
+            }
             a {
                 font-size: inherit;
                 color: inherit;
